@@ -32,8 +32,8 @@ n = int(input())
 function = input()
 q = int(input())
 
-img = cv2.imread(filename, cv2.IMREAD_GRAYSCALE)
-if img == None:
+img = cv2.imread(filename.strip(), cv2.IMREAD_GRAYSCALE)
+if img is None:
     print("Could not load image: " + filename)
     img = np.zeros((n, n, 1), np.uint8)
 
