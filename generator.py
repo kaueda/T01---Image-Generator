@@ -44,6 +44,8 @@ for x in range(n):
 
 # 3. Show Image
 cv2.imshow("show image", img)
+cv2.waitKey(0)
+cv2.destroyAllWindows()
 
 # 3. Store image as png
 cv2.imwrite(filename.split('.')[0] + ".png", img)
